@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <Grid item xs={12}>
     <Typography align="center" variant="h4">
-      Welcome! <Icon>sentiment_very_satisfied</Icon>
+      Welcome!! <Icon>sentiment_very_satisfied</Icon>
     </Typography>
     </Grid>
   );
