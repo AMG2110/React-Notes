@@ -12,11 +12,11 @@ const NotesList = props => {
   const { notes, deleteNote } = props;
 
   let formattedNotes = notes.length ? (
-    notes.map((note, index) => (
+    notes.map((note, id) => (
       <ListItem key={note.id} component={Link} to={`/view/${note.id}`} button>
         <ListItemText primary={note.title} />
         <ListItemSecondaryAction>
-          <IconButton onClick={() => deleteNote(index)}>
+          <IconButton onClick={() => deleteNote(id)}>
             <DeleteIcon />
           </IconButton>
         </ListItemSecondaryAction>

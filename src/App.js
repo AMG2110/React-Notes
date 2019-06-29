@@ -30,9 +30,9 @@ class App extends React.Component {
         });
       };
 
-      deleteNote = index => {
+      deleteNote = id => {
         const { notes } = this.state;
-        notes.splice(index, 1);
+        notes.splice(id, 1);
         this.setState({ notes });
       };
 
